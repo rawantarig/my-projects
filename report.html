@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search For Missing Persons</title>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+    <header class="sub headers">
+        <h1>Report For Missing Persons</h1>
+        <p>Please provide details about the missing person to help us in the search..</p>
+    </header>
+    <main>
+        <form id="myForm" >
+<p> 
+    <label for="name" class="i"> Full Name :</label>
+    <input type="text" id="name" placeholder="Enter full name" class="all" required/>
+        </p>
+<p> 
+    <label for="age" class="i">Age :</label>
+    <input type="number" id="age"  placeholder="Enter age" class="all" required/>
+        </p>
+<p> 
+    <label for="gender" class="i">Gender :</label>
+    <select  id="age" name="gender" class="all">
+         <option value="male">Male</option>
+         <option value="female">Female</option> 
+        
+    </select>
+        </p>
+        <p>
+            <label for="location" class="i"> Last Known Location</label>
+            <input list="programming" id="location" name="prog" placeholder="Enter city or reigon" class="all" required/>
+        </p>
+<p>
+    <label for="last seen date" class="i">Last seen date</label>
+    <input type="date" id="date" class="all" required/>
+        </p>
+<p> 
+    <label for="last seen time" class="i">Last seen Time</label>
+    <input type="time" id="time" class="all" required/>
+        </p>
+
+<p> 
+    <label for="description" class="i">Physical Description :</label>
+    <textarea  id="description" name="description" placeholder="Describe their physical appearance" class="all" required>
+        </textarea>
+        </p>
+        
+       </p>
+<p>
+    <label for="photo" class="i">Uplod a Recent Photo</label>
+    <input type="file" id="photo" accept="image*" class="all" required/>
+      </p>
+            
+<p>
+    <label for="contact" class="i">Your Contact Information :</label>
+    <input type="email" id="contact" name="connect" placeholder="Your email or phone number"   class="all" required>
+        </p>
+Please Make Sure That You Fill All The Fields
+<button type="submit" onclick="redirectToRequest()">
+Submit
+</button>
+        </form>
+    </main>
+    
+     <script>
+        window.alert("fill out all the fields then submit it")
+//    "id="myButton" onclick="redirectToRequest()"
+        // "use strict";
+//         console.log('dobedo')
+//         function validateForm(){
+//             var name=document.getElementById("name").value;
+//             var email=document.getElementById("contact").value;
+//             var age=document.getElementById("age").value;
+//             var photo=document.getElementById("photo").value;
+//             var date=document.getElementById("date").value;
+//             var time=document.getElementById("time").value;
+//             var location=document.getElementById("location").value;
+//             var description=document.getElementById("description").value;
+
+// if(name===""|| email===""||age===""||photo===""||gender===""||location===""||description===""){
+//     console.log('do')
+//     alert("please fill out all the fields");
+//     return ;
+// }
+// console.log("do the second function")
+// redirectToRequest();
+//         }
+// document.getElementById('myForm').addEventListener('submit',function(event)
+// {
+//     var form = document.getElementById('myForm');
+//     if(form.checkValidity()){
+//         alert("all fields are checked");
+//         window.location.href = "thanks.html"; 
+    
+//     }else{
+//         console.log('wrong');
+//         alert("please fill out all the fields");
+//         event.preventDefault();
+//     }
+// });
+     function redirectToRequest(){
+        window.location.href = "thanks.html"; 
+     }
+    
+     </script> 
+</body>
+</html>
