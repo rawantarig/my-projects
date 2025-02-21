@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Request presenter info</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<header>
+    <div >
+        <h1>Request Present</h1>
+        <p>Enter your information to make contact easy with you..</p>
+    </div>
+
+</header>
+<main>
+    <form id="request-form">
+        <p > 
+
+            <label>Name:</label>
+            <input type="text" id="Name"  class="name" required>
+            
+
+        </p>
+
+<p >
+ 
+    <label>Email Address:</label>
+    <input type="email" id="email" class="name" required>   
+    </p>
+     
+
+        
+    <p>
+    <label>Phone Number:</label>
+    <input type="tel" id="phone" class="number" required>
+    
+</p>
+<p class="btn">
+    <button id="next-btn" onclick="redirectToRequest()">
+    Next
+       </button>
+    </p>
+            </form>
+        </main>
+        <script>
+window.alert("Please fill out the fields then Press next button to shift to the next page")
+            
+            function redirectToRequest(){
+        console.log("done")
+        
+    window.location.href = "report.html"; 
+    
+        }
+    
+         </script>  
+    
+</body>
+</html>
